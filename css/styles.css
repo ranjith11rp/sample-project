@@ -1,0 +1,192 @@
+[ng-cloak] {
+  display: none;]
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  padding: 0;
+  top: 90%;
+}
+.dropdown-menu>li>a {
+  padding: 8px 12px;
+}
+.dropdown-menu::before {
+  border-bottom: 9px solid rgba(0, 0, 0, 0.5);
+  border-left: 9px solid rgba(0, 0, 0, 0);
+  border-right: 9px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  left: 36px;
+  position: absolute;
+  top: -8px;
+}
+.dropdown-menu::after {
+  border-bottom: 8px solid #FFFFFF;
+  border-left: 9px solid rgba(0, 0, 0, 0);
+  border-right: 9px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  left: 36px;
+  position: absolute;
+  top: -7px;
+}
+
+.topnav .navbar-default {
+  margin: 0;
+  background-color: #ffffff;
+  border: none;
+}
+.topnav .main-nav.navbar-nav>li:first-child>a {
+  padding-left: 0;
+}
+.topnav .main-nav.navbar-nav>li.active>a {
+  background-color: transparent;
+  border-bottom: 4px #08c solid;
+}
+
+.profile-nav .dropdown-toggle {
+  font-weight: 500;
+  font-size: 20px;
+}
+.profile-nav .question>a,
+.profile-nav .envelope>a {
+  padding: 6px 0 6px 10px;
+}
+
+.mastnav {
+  border-top: 1px #ccc solid;
+}
+.mastnav .navbar{
+  margin: 0;
+  min-height: 36px;
+  background-color: #e9e9e9;
+}
+.mastnav .main-nav.navbar-nav>li>a {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  display: inline-block;
+}
+.mastnav .main-nav.navbar-nav>li:first-child>a {
+  padding-left: 0;
+}
+.mastnav .main-nav.navbar-nav>.open>a,
+.mastnav .main-nav.navbar-nav>.open>a:focus,
+.mastnav .main-nav.navbar-nav>.open>a:hover {
+  background-color: transparent;
+  color: #08c;
+}
+.mastnav .main-nav.navbar-nav>li:after {
+  content: " | ";
+  color: #777;
+}
+.mastnav .main-nav.navbar-nav>li:last-child:after {
+  content: "";
+}
+.mastnav .secondary-nav.navbar-nav>li>a {
+  padding-left: 20px;
+  padding-right: 0;
+}
+.mastnav .secondary-nav.navbar-nav>li>a>span {
+  color: #08c;
+}
+
+.search {
+  padding: 20px 15px;
+  background-color: #f9f9f9;
+  border-top: 1px #ccc solid;
+  border-bottom: 1px #ccc solid;
+}
+.search h3 {
+  margin: 0;
+  padding: 6px 0 6px 40px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #999;
+}
+.search .search-form input[type="text"] {
+  border-radius: 20px;
+  box-shadow: none;
+}
+.search .search-form i {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+.content .container{
+  width: 1000px;
+}
+
+.content-meta {
+  padding: 16px 0;
+}
+.content-meta .title {
+  font-size: 18px;
+}
+.content-meta .icon span {
+  color: #08c;
+}
+
+.content-table {
+  margin-top: 10px;
+}
+
+.content-table th {
+  background-color: #ffffff;
+}
+
+.content-table th.object {
+  width: 550px;
+}
+
+.content-table th.platform,
+.content-table th.function,
+.content-table th.subcat {
+  width: 150px;
+}
+
+.content-table .search>td {
+  background-color: #e9e9e9;
+}
+.content-table .search>td>input[type="text"] {
+  box-shadow: none;
+}
+
+.content-table .data>td {
+  padding: 16px 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+.content-table .data>td .data-object-text,
+.content-table .data>td .data-object-controls {
+  float: left;
+  width: 50%;
+}
+.content-table .data>td .data-object-text>a {
+  margin-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.content-table .data>td .data-object-text>span {
+  display: block;
+  font-size: 12px;
+}
+
+.controls .nav>li>a {
+  padding: 0;
+}

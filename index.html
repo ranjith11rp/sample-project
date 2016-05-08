@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Screen Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="wrapper" ng-app="screen" ng-cloak>
+    <header>
+      <nav class="topnav">
+        <div class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-collapse collapse">
+              <ul class="main-nav nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Data Services</a></li>
+                <li><a href="#">Data Platform</a></li>
+                <li><a href="#">Data Virulization</a></li>
+                <li><a href="#">Search &amp; Integration</a></li>
+                <li><a href="#">Data Visulization</a></li>
+              </ul>
+              <!-- main-nav ends -->
+
+              <ul class="profile-nav nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Mike Jordan  <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                  </ul>
+                </li>
+                <li class="question">
+                  <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-question fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="envelope">
+                  <a href="#">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <!-- profile-nav ends -->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- topnav ends -->
+
+      <nav class="mastnav">
+        <div class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-collapse collapse">
+              <ul class="main-nav nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    All platforms <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Browser platforms <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="secondary-nav nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">
+                    <span class="fa-stack fa-md">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-plus fa-stack-1x fa-inverse"></i>
+                    </span>
+                    Create sandbox account
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fa-stack fa-md">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- mastnav ends -->
+    </header>
+    <!-- header ends -->
+
+    <section class="search">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <h3 class="pull-right">Search</h3>
+          </div>
+          <div class="col-lg-9">
+            <div class="search-form">
+              <i class="fa fa-search"></i>
+              <input class="form-control input-md" type="text" placeholder="Search Data Catalog">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- search ends -->
+
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="content-meta">
+              <div class="title pull-left">
+                <p>1 Result</p>
+              </div>
+              <div class="icon pull-right">
+                <span class="fa-stack fa-md">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="content-table" ng-controller="DataTableCtrl as dtc">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="object">Object</th>
+                    <th class="platform">Platform</th>
+                    <th class="function">Function</th>
+                    <th class="subcat">Sub Category</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="search">
+                    <td class="object"><input class="form-control input-md" type="text" ng-model="title"></td>
+                    <td class="platform"><input class="form-control input-md" type="text" ng-model="platform"></td>
+                    <td class="function"><input class="form-control input-md" type="text" ng-model="function"></td>
+                    <td class="subcat"><input class="form-control input-md" type="text" ng-model="subcat"></td>
+                  </tr>
+                  <tr class="data" ng-repeat="item in dtc.results | filter:title| filter:platform | filter:function | filter:subcat">
+                    <td>
+                      <div class="data-object-text">
+                        <a href="#">{{ item.object.title }}</a>
+                        <span>{{ item.object.description }}</span>
+                      </div>
+                      <div class="data-object-controls">
+                        <div class="controls pull-right">
+                          <ul class="nav nav-pills">
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-eye fa-stack-1x"></i></span></a></li>
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-download fa-stack-1x"></i></span></a></li>
+                            <li><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-cart-plus fa-stack-1x"></i></span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </td>
+                    <td>{{ item.platform }}</td>
+                    <td>{{ item.function }}</td>
+                    <td>{{ item.subcategory }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
